@@ -1,29 +1,5 @@
 <template>
   <h1>This is my main app</h1>
-  
-  <ul>
-    <!-- Note the use of template literals here, getting the info from 
-      the instantiated Todo class objects -->
-    <!-- check.bind means, if this evaluates as true the checbox will be checked.
-      If not, the checkbox won't be checked -->
-    <!-- Aurelia provides a repeater function which can be used to repeat elements-->
-    <li repeat.for="todo of todoList">
-      <input type="checkbox" checked.bind="todo.done">
 
-      <!-- Using the ternary operator here, aurelia checks to see if the todo item is done
-        If it is, a line-through is put on the text using css,
-        if not, no change to the text -->
-      <span css="text-decoration: ${todo.done ? 'line-through': 'none'}">${todo.description}</span>
-
-      <!-- This button goes to the removeTodo method, passsing through the todo object -->
-      <button click.delegate="removeTodo(todo)">Remove</button>
-    </li>
-  </ul>
-
-  <!-- Using Aurelia's two-way binding, any value entered into this input
-    will be available as a property of newItem -->
-  <input type="text" value.bind="newItem">
-
-  <!-- When this button is clicked, the addTodo method in the view-model is called  -->
-  <button click.delegate="addTodo()">Add</button>
+  <router-view></router-view>
 </template>

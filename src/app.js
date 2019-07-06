@@ -32,4 +32,18 @@ export class App {
   removeTodo(todo) {
     this.todoList.splice(this.todoList.indexOf(todo), 1);
   }
+
+  /* Whenever you have the router-view element in your views you need to use the configureRouter method */
+  configureRouter(config, router) {
+    /* The html title */
+    config.title = "Router Test";
+    /* You pass config.map an array of routes */
+    config.map([
+      /* This first route is what users see by default (nothing appended to the url
+        The moduleId maps to the component, in this case this is 'index' (remember the
+        component is the html view and the .js view-model.
+        title combines with the config.title to produce the full html title */
+      {route: '', name: 'home', moduleId: 'index', title: 'Home'}
+    ]);
+  }
 }
