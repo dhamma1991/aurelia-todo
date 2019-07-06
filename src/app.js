@@ -2,7 +2,6 @@ import {Todo} from './todo';
 
 export class App {
   constructor() {
-    this.message = 'Hello World!';
     /* Initialise todoList as an empty array */
     this.todoList = [];
     /* The string passed to Todo here is the description
@@ -43,7 +42,8 @@ export class App {
         The moduleId maps to the component, in this case this is 'index' (remember the
         component is the html view and the .js view-model.
         title combines with the config.title to produce the full html title */
-      {route: '', name: 'home', moduleId: 'index', title: 'Home'}
+      {route: '', name: 'home', moduleId: 'index', title: 'Home'},
+      {route: 'todo', name: 'todo', moduleId: 'todo', title: 'My Todo'},
     ]);
   }
 }
