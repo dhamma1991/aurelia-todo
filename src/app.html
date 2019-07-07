@@ -12,17 +12,10 @@
   </ul>
 
   <ul>
-<!--     <li>
-      <!~~ Since the reoute here requires parameters it has to be done differently.
-        The route has to be specified (in this case 'sticky-notes'.
-        The params are then binded ~~>
-      <a route-href="route: sticky-notes; params.bind: {note: 'Your first sticky note'}">First Sticky Note</a>
-    </li>
 
-    <li>
-      <a route-href="route: sticky-notes; params.bind: {note: 'Your second sticky note'}">Second Sticky Note</a>
-    </li>  -->
-
+    <!-- Since the route here requires parameters it has to be done differently.
+      The route has to be specified (in this case 'sticky-notes'.
+      The params are then binded -->
     <li repeat.for="noteItem of notesList">
       <a route-href="route: sticky-notes; params.bind: {noteTitle: noteItem.noteTitle, noteDescription: noteItem.noteDescription}">${noteItem.noteTitle}</a>
     </li>
@@ -43,7 +36,9 @@
 
   <router-view></router-view>
 
+  <!-- Footer -->
   <footer>
     <p>&copy;${currentYear} SomeCompany Inc.</p>
   </footer>
+  <!-- /Footer -->
 </template>
