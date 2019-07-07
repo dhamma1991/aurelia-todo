@@ -1,4 +1,4 @@
-export class StickyNote {
+export class StickyNotes {
     /* This is the activate life cycle hook
         This is used to access any parameters that are passed */
     activate(params) {
