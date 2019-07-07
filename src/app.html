@@ -14,8 +14,15 @@
       <!-- Since the reoute here requires parameters it has to be done differently.
         The route has to be specified (in this case 'sticky-notes'.
         The params are then binded -->
-      <a route-href="route: sticky-notes; params.bind: {note: 'Your first sticky note'}">Sticky Notes</a>
+      <a route-href="route: sticky-notes; params.bind: {note: 'Your first sticky note'}">First Sticky Note</a>
     </li>
+
+    <li>
+        <!-- Since the reoute here requires parameters it has to be done differently.
+          The route has to be specified (in this case 'sticky-notes'.
+          The params are then binded -->
+        <a route-href="route: sticky-notes; params.bind: {note: 'Your second sticky note'}">Second Sticky Note</a>
+      </li>
   </ul>
 
   <router-view></router-view>
