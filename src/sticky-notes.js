@@ -1,6 +1,7 @@
 export class StickyNotes {
-    constructor(note) {
-        this.note = note;
+    constructor(noteTitle, noteText) {
+        this.noteTitle = noteTitle;
+        this.noteText = noteText;
     }
 
     /* This is the activate life cycle hook
