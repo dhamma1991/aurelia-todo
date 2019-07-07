@@ -1,5 +1,6 @@
 import { PLATFORM } from "aurelia-framework";
 import moment from 'moment';
+import bootstrap from 'bootstrap';
 import {Todo} from './todo';
 import {StickyNotes} from './sticky-notes';
 
