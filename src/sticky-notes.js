@@ -7,6 +7,7 @@ export class StickyNotes {
     /* This is the activate life cycle hook
         This is used to access any parameters that are passed */
     activate(params) {
-        this.note = params.note;
+        this.noteTitle = params.noteTitle;
+        this.noteDescription = params.noteDescription;
     }
 }
