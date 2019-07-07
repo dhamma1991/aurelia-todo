@@ -45,6 +45,8 @@ export class App {
         title combines with the config.title to produce the full html title */
       {route: '', name: 'home', moduleId: PLATFORM.moduleName('index'), title: 'Home'},
       {route: 'todo', name: 'todo', moduleId: 'todo', title: 'My Todo'},
+      /* THe :note is a parameter that can be passed through the url */
+      {route: 'sticky-notes/:note', name: 'sticky-notes', moduleId: 'sticky-notes', title: 'Notes'},
     ]);
 
     this.router = router;
