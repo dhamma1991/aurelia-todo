@@ -32,17 +32,17 @@ export class App {
     this.newItem = "";
   }
 
+  /* Get the todoList array. Use splice to delete 1 item in the array (the 2nd argument)
+    Get the index of the todo, and pass that in as the first argument of splice */
+  removeTodo(todo) {
+    this.todoList.splice(this.todoList.indexOf(todo), 1);
+  }
+
   addNote() {
     this.notesList.push(new StickyNotes(this.newNote));
     /* Clear newItem, this ensures the value of the input on the frontend is empty
       after a new item is added */
     this.newNote = "";
-  }
-
-  /* Get the todoList array. Use splice to delete 1 item in the array (the 2nd argument)
-    Get the index of the todo, and pass that in as the first argument of splice */
-  removeTodo(todo) {
-    this.todoList.splice(this.todoList.indexOf(todo), 1);
   }
 
   /* Whenever you have the router-view element in your views you need to use the configureRouter method */
