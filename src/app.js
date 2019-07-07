@@ -42,10 +42,11 @@ export class App {
   }
 
   addNote() {
-    this.notesList.push(new StickyNotes(this.newNote));
+    this.notesList.push(new StickyNotes(this.newNoteTitle, this.newNoteDescription));
     /* Clear newItem, this ensures the value of the input on the frontend is empty
       after a new item is added */
-    this.newNote = "";
+    this.newNoteTitle = "";
+    this.newNoteDescription = "";
   }
 
   /* Whenever you have the router-view element in your views you need to use the configureRouter method */
