@@ -31,6 +31,7 @@ export class App {
   removeTodo(todo) {
     this.todoList.splice(this.todoList.indexOf(todo), 1);
   }
+  
   /* Whenever you have the router-view element in your views you need to use the configureRouter method */
   configureRouter(config, router) {
     /* The html title */
