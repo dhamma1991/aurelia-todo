@@ -15,6 +15,9 @@ export class App {
     this.todoList.push(new Todo('Plot world domination'));
 
     this.newItem = "";
+
+    /* Initialise notes array */
+    this.notesList = [];
   }
 
   /* This method is called when the button in the view is clicked
