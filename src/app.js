@@ -1,5 +1,6 @@
 import { PLATFORM } from "aurelia-framework";
 import {Todo} from './todo';
+import {StickyNotes} from './sticky-notes';
 
 export class App {
   constructor() {
