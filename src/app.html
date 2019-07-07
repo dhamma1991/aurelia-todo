@@ -29,9 +29,11 @@
 
     <!-- Add Note Link -->
     <li>
-      <!-- Using Aurelia's two-way binding, any value entered into this input
-        will be available as a property of newItem -->
-      <input type="text" value.bind="newNote">
+      <label for="note-title">Note Title</label>
+      <input id="note-title" type="text" value.bind="newNoteTitle">
+
+      <label for="note-description">Note Description</label>
+      <input id="note-description" type="text" value.bind="newNoteDescription">
 
       <!-- When this button is clicked, the addTodo method in the view-model is called  -->
       <button click.delegate="addNote()">Add</button>

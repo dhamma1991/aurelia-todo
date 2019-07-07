@@ -21,7 +21,8 @@ export class App {
     this.notesList = [];
     this.notesList.push(new StickyNotes('First note title', 'First note description blah blah blah.'));
     /* Initialise new note */
-    this.newNote = "";
+    this.newNoteTitle = "";
+    this.newNoteDescription = "";
   }
 
   /* This method is called when the button in the view is clicked
