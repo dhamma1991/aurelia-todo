@@ -5,6 +5,9 @@ import {StickyNotes} from './sticky-notes';
 
 export class App {
   constructor() {
+    /* Get the current year to use (currently) in the footer of the app */
+    this.currentYear = moment().format('YYYY');
+    
     /* Initialise todoList as an empty array */
     this.todoList = [];
     /* The string passed to Todo here is the description
