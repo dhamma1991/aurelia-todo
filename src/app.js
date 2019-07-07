@@ -19,6 +19,7 @@ export class App {
 
     /* Initialise notes array */
     this.notesList = [];
+    /* Push an item as the first sticky note that will display in the ul */
     this.notesList.push(new StickyNotes('First note title', 'First note description blah blah blah.'));
     /* Initialise new note */
     this.newNoteTitle = "";
