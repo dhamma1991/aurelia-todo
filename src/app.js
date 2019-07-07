@@ -19,7 +19,7 @@ export class App {
 
     /* Initialise notes array */
     this.notesList = [];
-    this.notesList.push(new StickyNotes('First note'));
+    this.notesList.push(new StickyNotes('First note title', 'First note description blah blah blah.'));
     /* Initialise new note */
     this.newNote = "";
   }
