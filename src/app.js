@@ -18,6 +18,8 @@ export class App {
 
     /* Initialise notes array */
     this.notesList = [];
+    /* Initialise new note */
+    this.newNote = "";
   }
 
   /* This method is called when the button in the view is clicked
@@ -28,6 +30,13 @@ export class App {
     /* Clear newItem, this ensures the value of the input on the frontend is empty
       after a new item is added */
     this.newItem = "";
+  }
+
+  addNote() {
+    this.notesList.push(new StickyNotes(this.newNote));
+    /* Clear newItem, this ensures the value of the input on the frontend is empty
+      after a new item is added */
+    this.newNote = "";
   }
 
   /* Get the todoList array. Use splice to delete 1 item in the array (the 2nd argument)
