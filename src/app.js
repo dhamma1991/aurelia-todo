@@ -1,3 +1,4 @@
+import { PLATFORM } from "aurelia-framework";
 import {Todo} from './todo';
 
 export class App {
@@ -31,7 +32,7 @@ export class App {
   removeTodo(todo) {
     this.todoList.splice(this.todoList.indexOf(todo), 1);
   }
-  
+
   /* Whenever you have the router-view element in your views you need to use the configureRouter method */
   configureRouter(config, router) {
     /* The html title */
@@ -42,7 +43,7 @@ export class App {
         The moduleId maps to the component, in this case this is 'index' (remember the
         component is the html view and the .js view-model.
         title combines with the config.title to produce the full html title */
-      {route: '', name: 'home', moduleId: 'index', title: 'Home'},
+      {route: '', name: 'home', moduleId: PLATFORM.moduleName('index'), title: 'Home'},
       {route: 'todo', name: 'todo', moduleId: 'todo', title: 'My Todo'},
     ]);
 
