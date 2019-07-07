@@ -22,6 +22,15 @@
     <li>
       <a route-href="route: sticky-notes; params.bind: {note: 'Your second sticky note'}">Second Sticky Note</a>
     </li>
+
+    <li>
+      <!-- Using Aurelia's two-way binding, any value entered into this input
+        will be available as a property of newItem -->
+      <input type="text" value.bind="newNote">
+
+      <!-- When this button is clicked, the addTodo method in the view-model is called  -->
+      <button click.delegate="addNote()">Add</button>
+    </li>
   </ul>
 
   <router-view></router-view>
