@@ -24,7 +24,7 @@
     </li>  -->
 
     <li repeat.for="noteItem of notesList">
-      <a href="#">${noteItem.noteTitle}</a>
+      <a route-href="route: sticky-notes; params.bind: {noteTitle: noteItem.noteTitle, noteDescription: noteItem.noteTitle}">${noteItem.noteTitle}</a>
     </li>
 
     <!-- Add Note Link -->

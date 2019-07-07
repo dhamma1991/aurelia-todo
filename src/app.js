@@ -63,7 +63,7 @@ export class App {
       {route: '', name: 'home', moduleId: PLATFORM.moduleName('index'), title: 'Home'},
       {route: 'todo', name: 'todo', moduleId: 'todo', title: 'My Todo'},
       /* THe :note is a parameter that can be passed through the url */
-      {route: 'sticky-notes/:note', name: 'sticky-notes', moduleId: PLATFORM.moduleName('sticky-notes'), title: 'Notes'},
+      {route: 'sticky-notes/:noteTitle', name: 'sticky-notes', moduleId: PLATFORM.moduleName('sticky-notes'), title: 'Notes'},
     ]);
 
     this.router = router;
